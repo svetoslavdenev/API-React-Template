@@ -1,0 +1,87 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30002.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{104CE38A-383E-4E10-9EEE-2AD50AC089D1}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Common", "Common", "{23F1B623-CAE5-4181-8723-09E07D8B467A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{9EBD9EBE-C405-43D4-ADE9-B325A4630FD7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{4B2CF63A-6F11-4206-AE50-BC463BF725BC}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{72532283-655B-421F-9211-A84717DB8BB3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API-React-Template.Tests", "Tests\API-React-Template.Tests\API-React-Template.Tests.csproj", "{528388DA-671B-431E-8251-905B986D7A6E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API-React-Template.Domain", "Data\API-React-Template.Domain\API-React-Template.Domain.csproj", "{4BA7EA01-1B15-41C4-B64A-E93FFFFAE67E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API-React-Template.Services", "Services\API-React-Template.Services\API-React-Template.Services.csproj", "{DD3CD8C0-D0A6-43A5-839A-95BE6C473BAC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API-React-Template.ViewModels", "Web\API-React-Template.ViewModels\API-React-Template.ViewModels.csproj", "{A3830032-CC0F-4DFC-B9C0-C308557FD1C8}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API-React-Template.Common", "Common\API-React-Template.Common\API-React-Template.Common.csproj", "{8115B245-34ED-4579-90D7-7B4B9BAFF68F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API-React-Template.DataAccess", "Data\API-React-Template.DataAccess\API-React-Template.DataAccess.csproj", "{2A5B73EA-7066-481D-B47E-2691F734A855}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API-React-Template.Repositories", "Data\API-React-Template.Repositories\API-React-Template.Repositories.csproj", "{2299428F-3AA2-4CF2-A0DA-FCF65FFC2E1C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API-React-Template.API", "API-React-Template.API\API-React-Template.API.csproj", "{0AA215EF-1185-424A-9F34-C8180288B495}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{528388DA-671B-431E-8251-905B986D7A6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{528388DA-671B-431E-8251-905B986D7A6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{528388DA-671B-431E-8251-905B986D7A6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{528388DA-671B-431E-8251-905B986D7A6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4BA7EA01-1B15-41C4-B64A-E93FFFFAE67E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4BA7EA01-1B15-41C4-B64A-E93FFFFAE67E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4BA7EA01-1B15-41C4-B64A-E93FFFFAE67E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4BA7EA01-1B15-41C4-B64A-E93FFFFAE67E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD3CD8C0-D0A6-43A5-839A-95BE6C473BAC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD3CD8C0-D0A6-43A5-839A-95BE6C473BAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD3CD8C0-D0A6-43A5-839A-95BE6C473BAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD3CD8C0-D0A6-43A5-839A-95BE6C473BAC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3830032-CC0F-4DFC-B9C0-C308557FD1C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3830032-CC0F-4DFC-B9C0-C308557FD1C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3830032-CC0F-4DFC-B9C0-C308557FD1C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3830032-CC0F-4DFC-B9C0-C308557FD1C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8115B245-34ED-4579-90D7-7B4B9BAFF68F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8115B245-34ED-4579-90D7-7B4B9BAFF68F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8115B245-34ED-4579-90D7-7B4B9BAFF68F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8115B245-34ED-4579-90D7-7B4B9BAFF68F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A5B73EA-7066-481D-B47E-2691F734A855}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A5B73EA-7066-481D-B47E-2691F734A855}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A5B73EA-7066-481D-B47E-2691F734A855}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A5B73EA-7066-481D-B47E-2691F734A855}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2299428F-3AA2-4CF2-A0DA-FCF65FFC2E1C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2299428F-3AA2-4CF2-A0DA-FCF65FFC2E1C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2299428F-3AA2-4CF2-A0DA-FCF65FFC2E1C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2299428F-3AA2-4CF2-A0DA-FCF65FFC2E1C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AA215EF-1185-424A-9F34-C8180288B495}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AA215EF-1185-424A-9F34-C8180288B495}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AA215EF-1185-424A-9F34-C8180288B495}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AA215EF-1185-424A-9F34-C8180288B495}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{528388DA-671B-431E-8251-905B986D7A6E} = {72532283-655B-421F-9211-A84717DB8BB3}
+		{4BA7EA01-1B15-41C4-B64A-E93FFFFAE67E} = {104CE38A-383E-4E10-9EEE-2AD50AC089D1}
+		{DD3CD8C0-D0A6-43A5-839A-95BE6C473BAC} = {4B2CF63A-6F11-4206-AE50-BC463BF725BC}
+		{A3830032-CC0F-4DFC-B9C0-C308557FD1C8} = {9EBD9EBE-C405-43D4-ADE9-B325A4630FD7}
+		{8115B245-34ED-4579-90D7-7B4B9BAFF68F} = {23F1B623-CAE5-4181-8723-09E07D8B467A}
+		{2A5B73EA-7066-481D-B47E-2691F734A855} = {104CE38A-383E-4E10-9EEE-2AD50AC089D1}
+		{2299428F-3AA2-4CF2-A0DA-FCF65FFC2E1C} = {104CE38A-383E-4E10-9EEE-2AD50AC089D1}
+		{0AA215EF-1185-424A-9F34-C8180288B495} = {9EBD9EBE-C405-43D4-ADE9-B325A4630FD7}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BBAAF993-9989-4071-8608-1A97FDA85E3F}
+	EndGlobalSection
+EndGlobal

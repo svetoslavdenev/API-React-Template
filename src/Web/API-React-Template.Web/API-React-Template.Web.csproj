@@ -1,0 +1,35 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+	<GenerateRuntimeConfigurationFiles>true</GenerateRuntimeConfigurationFiles>
+    <LangVersion>latest</LangVersion>
+    <UserSecretsId>aspnet-MVCTemplate.Web-F35FBDDB-8517-4A0A-B66D-6A3EB4BCAF1B</UserSecretsId>
+  </PropertyGroup>
+  
+  <PropertyGroup>
+    <CodeAnalysisRuleSet>..\..\Rules.ruleset</CodeAnalysisRuleSet>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <AdditionalFiles Include="..\..\stylecop.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="5.0.1" />
+    <PackageReference Include="StyleCop.Analyzers" Version="1.1.118">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Data\MVCTemplate.DataAccess\MVCTemplate.DataAccess.csproj" />
+    <ProjectReference Include="..\..\Data\MVCTemplate.Domain\MVCTemplate.Domain.csproj" />
+    <ProjectReference Include="..\..\Data\MVCTemplate.Repositories\MVCTemplate.Repositories.csproj" />
+    <ProjectReference Include="..\..\Services\MVCTemplate.Services\MVCTemplate.Services.csproj" />
+    <ProjectReference Include="..\MVCTemplate.ViewModels\MVCTemplate.ViewModels.csproj" />
+  </ItemGroup>
+
+</Project>
