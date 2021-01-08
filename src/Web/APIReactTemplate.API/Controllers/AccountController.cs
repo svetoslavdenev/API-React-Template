@@ -1,9 +1,12 @@
 ﻿namespace APIReactTemplate.API.Controllers
 {
     using System.Threading.Tasks;
+
     using Microsoft.AspNetCore.Authorization;
     using Microsoft.AspNetCore.Mvc;
     using APIReactTemplate.Services.Identity.Interfaces;
+    using APIReactTemplate.ViewModels.Identity;
+    using APIReactTemplate.Domain.Identity;
 
     [Route("api/[controller]")]
     [ApiController]
@@ -14,6 +17,25 @@
         public AccountController(IUserService userService)
         {
             this.userService = userService;
+        }
+
+        [HttpPost("[action]")]
+        public async Task<ActionResult<string>> Register(RegisterUserModel newUser)
+        {
+            var jwt = await this.userService.Register(new ApplicationUser
+            {
+                FirstName = newUser.FirstName,
+                LastName = newUser.LastName,
+                Email = newUser.Email,
+                UserName = newUser.Email,
+            }, newUser.Password);
+
+            if (string.IsNullOrEmpty(jwt))
+            {
+                return Forbid();
+            }
+
+            return jwt;
         }
 
         [HttpPost("[action]")]

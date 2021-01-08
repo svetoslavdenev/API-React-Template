@@ -30,8 +30,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Common\API-React-Template.Common\API-React-Template.Common.csproj" />
-    <ProjectReference Include="..\API-React-Template.Domain\API-React-Template.Domain.csproj" />
+    <ProjectReference Include="..\..\Common\APIReactTemplate.Common\APIReactTemplate.Common.csproj" />
+    <ProjectReference Include="..\APIReactTemplate.Domain\APIReactTemplate.Domain.csproj" />
   </ItemGroup>
 
   <ItemGroup>

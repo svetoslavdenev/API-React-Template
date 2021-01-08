@@ -29,11 +29,12 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\Common\API-React-Template.Common\API-React-Template.Common.csproj" />
-    <ProjectReference Include="..\..\Data\API-React-Template.DataAccess\API-React-Template.DataAccess.csproj" />
-    <ProjectReference Include="..\..\Data\API-React-Template.Domain\API-React-Template.Domain.csproj" />
-    <ProjectReference Include="..\..\Data\API-React-Template.Repositories\API-React-Template.Repositories.csproj" />
-    <ProjectReference Include="..\..\Services\API-React-Template.Services\API-React-Template.Services.csproj" />
+    <ProjectReference Include="..\..\Common\APIReactTemplate.Common\APIReactTemplate.Common.csproj" />
+    <ProjectReference Include="..\..\Data\APIReactTemplate.DataAccess\APIReactTemplate.DataAccess.csproj" />
+    <ProjectReference Include="..\..\Data\APIReactTemplate.Domain\APIReactTemplate.Domain.csproj" />
+    <ProjectReference Include="..\..\Data\APIReactTemplate.Repositories\APIReactTemplate.Repositories.csproj" />
+    <ProjectReference Include="..\..\Services\APIReactTemplate.Services\APIReactTemplate.Services.csproj" />
+    <ProjectReference Include="..\APIReactTemplate.ViewModels\APIReactTemplate.ViewModels.csproj" />
   </ItemGroup>
 
   <Target Name="DebugEnsureNodeEnv" BeforeTargets="Build" Condition=" '$(Configuration)' == 'Debug' And !Exists('$(SpaRoot)node_modules') ">

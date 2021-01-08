@@ -6,5 +6,10 @@
         {
             public const string AdminRole = "administrator";
         }
+
+        public static class UserRoleName
+        {
+            public const string UserRole = "user";
+        }
     }
 }

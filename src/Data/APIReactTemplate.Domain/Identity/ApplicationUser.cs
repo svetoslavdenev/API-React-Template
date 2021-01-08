@@ -3,9 +3,8 @@
     using System;
     using System.Collections.Generic;
 
-    using Microsoft.AspNetCore.Identity;
-
     using APIReactTemplate.Domain.Common.Interfaces;
+    using Microsoft.AspNetCore.Identity;
 
     public class ApplicationUser : IdentityUser, IDeletable, ITimeTrackable
     {
@@ -19,6 +18,10 @@
         }
 
         public virtual ICollection<JWT> JWTokens { get; set; }
+
+        public string FirstName { get; set; }
+
+        public string LastName { get; set; }
 
         public bool IsDeleted { get; set; }
 

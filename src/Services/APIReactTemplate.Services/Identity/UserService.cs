@@ -16,6 +16,8 @@
     using Microsoft.Extensions.Options;
     using Microsoft.IdentityModel.Tokens;
 
+    using static APIReactTemplate.Common.Identity.IdentityConstants.UserRoleName;
+
     public class UserService : IUserService
     {
         private readonly ApplicationDbContext db;
@@ -51,25 +53,7 @@
 
             if (result.Succeeded)
             {
-                var expirationDate = DateTime.UtcNow.AddDays(7);
-                var tokenHandler = new JwtSecurityTokenHandler();
-                var key = Encoding.ASCII.GetBytes(this.jwtSettings.Secret);
-                var tokenDescriptor = new SecurityTokenDescriptor
-                {
-                    Subject = new ClaimsIdentity(await this.GetUserClaims(user)),
-                    Expires = expirationDate,
-                    SigningCredentials = new SigningCredentials(
-                        new SymmetricSecurityKey(key),
-                        SecurityAlgorithms.HmacSha256Signature
-                ),
-                };
-
-                var token = tokenHandler.CreateToken(tokenDescriptor);
-                var jwt = tokenHandler.WriteToken(token);
-
-                await this.jwtService.AddJWT(jwt, user.Id, expirationDate);
-
-                return jwt;
+                return await this.GenerateJWT(user);
             }
 
             return string.Empty;
@@ -78,6 +62,22 @@
         public async Task Logout(string jwt)
         {
             await this.jwtService.DeactivateJWT(jwt);
+        }
+
+        public async Task<string> Register(ApplicationUser newUser, string password)
+        {
+           var result = await this.userManager.CreateAsync(newUser, password);
+
+           if (result.Succeeded)
+           {
+               var addToRoleResult = await this.userManager.AddToRoleAsync(newUser, UserRole);
+               if (addToRoleResult.Succeeded)
+               {
+                  return await this.GenerateJWT(newUser);
+               }
+            }
+
+           return string.Empty;
         }
 
         private async Task<IEnumerable<Claim>> GetUserClaims(ApplicationUser user)
@@ -98,6 +98,29 @@
             }
 
             return claims;
+        }
+
+        private async Task<string> GenerateJWT(ApplicationUser user)
+        {
+            var expirationDate = DateTime.UtcNow.AddDays(7);
+            var tokenHandler = new JwtSecurityTokenHandler();
+            var key = Encoding.ASCII.GetBytes(this.jwtSettings.Secret);
+            var tokenDescriptor = new SecurityTokenDescriptor
+            {
+                Subject = new ClaimsIdentity(await this.GetUserClaims(user)),
+                Expires = expirationDate,
+                SigningCredentials = new SigningCredentials(
+                    new SymmetricSecurityKey(key),
+                    SecurityAlgorithms.HmacSha256Signature
+            ),
+            };
+
+            var token = tokenHandler.CreateToken(tokenDescriptor);
+            var jwt = tokenHandler.WriteToken(token);
+
+            await this.jwtService.AddJWT(jwt, user.Id, expirationDate);
+
+            return jwt;
         }
     }
 }

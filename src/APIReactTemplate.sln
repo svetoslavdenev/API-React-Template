@@ -13,21 +13,21 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{4B
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{72532283-655B-421F-9211-A84717DB8BB3}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API-React-Template.Tests", "Tests\API-React-Template.Tests\API-React-Template.Tests.csproj", "{528388DA-671B-431E-8251-905B986D7A6E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIReactTemplate.Tests", "Tests\APIReactTemplate.Tests\APIReactTemplate.Tests.csproj", "{528388DA-671B-431E-8251-905B986D7A6E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API-React-Template.Domain", "Data\API-React-Template.Domain\API-React-Template.Domain.csproj", "{4BA7EA01-1B15-41C4-B64A-E93FFFFAE67E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIReactTemplate.Domain", "Data\APIReactTemplate.Domain\APIReactTemplate.Domain.csproj", "{4BA7EA01-1B15-41C4-B64A-E93FFFFAE67E}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API-React-Template.Services", "Services\API-React-Template.Services\API-React-Template.Services.csproj", "{DD3CD8C0-D0A6-43A5-839A-95BE6C473BAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIReactTemplate.Services", "Services\APIReactTemplate.Services\APIReactTemplate.Services.csproj", "{DD3CD8C0-D0A6-43A5-839A-95BE6C473BAC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API-React-Template.ViewModels", "Web\API-React-Template.ViewModels\API-React-Template.ViewModels.csproj", "{A3830032-CC0F-4DFC-B9C0-C308557FD1C8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIReactTemplate.ViewModels", "Web\APIReactTemplate.ViewModels\APIReactTemplate.ViewModels.csproj", "{A3830032-CC0F-4DFC-B9C0-C308557FD1C8}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API-React-Template.Common", "Common\API-React-Template.Common\API-React-Template.Common.csproj", "{8115B245-34ED-4579-90D7-7B4B9BAFF68F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIReactTemplate.Common", "Common\APIReactTemplate.Common\APIReactTemplate.Common.csproj", "{8115B245-34ED-4579-90D7-7B4B9BAFF68F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API-React-Template.DataAccess", "Data\API-React-Template.DataAccess\API-React-Template.DataAccess.csproj", "{2A5B73EA-7066-481D-B47E-2691F734A855}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIReactTemplate.DataAccess", "Data\APIReactTemplate.DataAccess\APIReactTemplate.DataAccess.csproj", "{2A5B73EA-7066-481D-B47E-2691F734A855}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API-React-Template.Repositories", "Data\API-React-Template.Repositories\API-React-Template.Repositories.csproj", "{2299428F-3AA2-4CF2-A0DA-FCF65FFC2E1C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIReactTemplate.Repositories", "Data\APIReactTemplate.Repositories\APIReactTemplate.Repositories.csproj", "{2299428F-3AA2-4CF2-A0DA-FCF65FFC2E1C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "API-React-Template.API", "Web\API-React-Template.API\API-React-Template.API.csproj", "{A7AA7B38-5B7D-4D80-917B-AC90A981BA14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "APIReactTemplate.API", "Web\APIReactTemplate.API\APIReactTemplate.API.csproj", "{A7AA7B38-5B7D-4D80-917B-AC90A981BA14}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
